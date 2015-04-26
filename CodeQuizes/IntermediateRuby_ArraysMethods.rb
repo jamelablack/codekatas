@@ -180,7 +180,7 @@ Use fav_numbers to create the following array (all the even numbers):
 Answer:
 fav_numbers = [1, 2, 3, 4, 10, 20, 33, 35]
 
-fav_numbers.map.select { |x| x % 2 == 0}
+fav_numbers.select { |x| x % 2 == 0}
 
 OR
 
@@ -221,7 +221,8 @@ end
 
 #Problem 18
 manly = ['batman', 'manbot', 'mace', 'tulip', 'nah man, nah']
-Create an array of all elements in the manly array that contain the word "man". The return value should be:
+Create an array of all elements in the manly array that contain the word "man".
+The return value should be:
 
 ["batman", "manbot", "nah man, nah"]
 
@@ -229,9 +230,7 @@ Answer:
 manly = ['batman', 'manbot', 'mace', 'tulip', 'nah man, nah']
 manly.select { |word| word.include?("man") }
 
-#OR
 
-manly.grep /man/
 
 # OR
 

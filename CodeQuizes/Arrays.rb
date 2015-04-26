@@ -39,3 +39,10 @@ arr.map {|arr| arr.to_s}
 #array.values_at(0,1)
 
 #.select._with+index
+
+#include?
+
+#.match
+
+#cycle method : a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
+
