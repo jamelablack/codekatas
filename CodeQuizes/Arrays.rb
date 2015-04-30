@@ -46,3 +46,7 @@ arr.map {|arr| arr.to_s}
 
 #cycle method : a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
 
+Singleton Methods
+zip
+yeild
+

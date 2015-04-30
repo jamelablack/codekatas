@@ -334,6 +334,22 @@ class Hash
   end
 end
 
+#Problem 26
+a = [1, 2, 3] and b = ["a", "b", "c"]. Use these arrays to make the following hash: {1 => "a", 2 => "b", 3 => "c"}
+
+Answer:
+Hash[a.zip(b)]
+
+
+#Problem 27
+a = [1, 2, 3]
+b = ["a", "b", "c"]
+Use these arrays to make the following array:
+
+[[1, "a"], [2, "b"], [3, "c"]]
+#Answer:
+a.zip(b)
+
 
 
 

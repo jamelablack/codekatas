@@ -247,6 +247,28 @@ days.values_at(0, 2)
 
 days.select.with_index { |_, index| [0,2].include? index }
 
+#Problem 20
+Convert c = [[1, "a"], [2, "b"], [3, "c"]] to [1, "a", 2, "b", 3, "c"]
+
+Answer:
+c.flatten
+
+#Problem 21
+Create the following array:
+[["", "", ""], ["", "", ""], ["", "", ""]]
+Answer:
+Array.new(3) {Array.new(3, "")}
+
+#Problem 22
+Convert a = [["row", 3], ["your", 1], ["boat", 1]] to ["row", "row", "row", "your", "boat"].
+The first element in the nested arrays is the word that should be displayed and the second element in t
+he nested array is the number of times the word should be displayed.
+
+Answer:
+a.map { |word, num| [word].cycle(times).to_a}.flatten
+#OR
+a.inject([]) do |output, (word, num)| num.times {output << word}; output}
+
 
 
 
